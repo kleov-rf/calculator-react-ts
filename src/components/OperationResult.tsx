@@ -1,13 +1,15 @@
 interface OperationResultProps {
-  numbers: number[]
+    firstNumbers: number[];
+    operator: string | null;
+    lastNumber: number[];
 }
 
-const OperationResult = ({ numbers }: OperationResultProps) => {
-  return (
-    <header>
-      <h3>{numbers.join('')}</h3>
-    </header>
-  )
+const OperationResult = ({firstNumbers, operator, lastNumber}: OperationResultProps) => {
+    return (
+        <header>
+            <h3>{firstNumbers.join('')} {operator} {lastNumber.join('')} </h3>
+        </header>
+    )
 }
 
 export default OperationResult
