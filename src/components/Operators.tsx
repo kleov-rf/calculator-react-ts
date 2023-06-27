@@ -1,6 +1,6 @@
 const Operators = () => {
   return (
-    <aside style={{ display: 'flex', flexDirection: 'column' }}>
+    <aside style={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
       <button>+</button>
       <button>-</button>
       <button>*</button>

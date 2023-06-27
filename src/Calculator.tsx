@@ -16,7 +16,14 @@ export function Calculator() {
   return (
     <>
       <OperationResult numbers={numbers} />
-      <main style={{ display: 'flex', justifyContent: 'space-between' }}>
+      <main
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          gap: '5px',
+          marginBottom: '5px',
+        }}
+      >
         <NumberPad introducingNumberHandler={addNumber} />
         <Operators />
       </main>

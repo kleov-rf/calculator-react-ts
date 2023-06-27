@@ -3,7 +3,11 @@ interface OperationResultProps {
 }
 
 const OperationResult = ({ numbers }: OperationResultProps) => {
-  return <header style={{ border: '1px red solid' }}>{numbers.join('')}</header>
+  return (
+    <header>
+      <h3>{numbers.join('')}</h3>
+    </header>
+  )
 }
 
 export default OperationResult

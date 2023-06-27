@@ -4,7 +4,13 @@ interface NumberPadProps {
 
 const NumberPad = ({ introducingNumberHandler }: NumberPadProps) => {
   return (
-    <article style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)' }}>
+    <article
+      style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(3,1fr)',
+        gap: '5px',
+      }}
+    >
       {[1, 2, 3, 4, 5, 6, 7, 8, 9, 0].map(number => (
         <button
           key={`_${number}`}
