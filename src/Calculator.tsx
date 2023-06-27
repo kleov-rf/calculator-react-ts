@@ -1,15 +1,15 @@
-import {OperationResult} from "./OperationResult.tsx";
-import {NumberPad} from "./NumberPad.tsx";
-import {Operators} from "./Operators.tsx";
-import {ResultButton} from "./ResultButton.tsx";
+import OperationResult from "./components/OperationResult.tsx";
+import NumberPad from "./components/NumberPad.tsx";
+import Operators from "./components/Operators.tsx";
+import ResultButton from "./components/ResultButton.tsx";
 
 export function Calculator() {
     return (
         <>
-        <OperationResult/>
-        <NumberPad/>
-        <Operators/>
-        <ResultButton/>
+            <OperationResult/>
+            <NumberPad/>
+            <Operators/>
+            <ResultButton/>
         </>
     )
 
