@@ -1,26 +1,22 @@
-const NumberPad = () => {
-    return (
-        <>
-            <div>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-            </div>
-            <div>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-            </div>
-            <div>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-            </div>
-            <div>
-                <button>0</button>
-            </div>
-        </>
-    )
+interface NumberPadProps {
+  introducingNumberHandler: (x: number) => void
+}
+
+const NumberPad = ({ introducingNumberHandler }: NumberPadProps) => {
+  return (
+    <>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)' }}>
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 0].map(number => (
+          <button
+            key={`_${number}`}
+            onClick={() => introducingNumberHandler(number)}
+          >
+            {number}
+          </button>
+        ))}
+      </div>
+    </>
+  )
 }
 
 export default NumberPad

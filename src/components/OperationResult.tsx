@@ -1,7 +1,12 @@
-const OperationResult = () => {
+interface OperationResultProps {
+    numbers: number[]
+}
+
+
+const OperationResult = ({numbers}: OperationResultProps) => {
     return (
         <header style={{'border': '1px red solid'}}>
-            0
+            {numbers.join('')}
         </header>
     )
 }
