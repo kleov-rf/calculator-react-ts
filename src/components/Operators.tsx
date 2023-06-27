@@ -1,20 +1,12 @@
 const Operators = () => {
-    return (
-        <>
-            <div>
-                <button>+</button>
-            </div>
-            <div>
-                <button>-</button>
-            </div>
-            <div>
-                <button>*</button>
-            </div>
-            <div>
-                <button>/</button>
-            </div>
-        </>
-    )
+  return (
+    <aside style={{ display: 'flex', flexDirection: 'column' }}>
+      <button>+</button>
+      <button>-</button>
+      <button>*</button>
+      <button>/</button>
+    </aside>
+  )
 }
 
 export default Operators
